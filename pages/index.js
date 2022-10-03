@@ -3,9 +3,13 @@ import Banner from '../components/Banner'
 import Process from '../components/Process'
 import TabMenu from '../components/TabMenu'
 import styles from '../styles/Home.module.css'
-import { step } from '../lib/stepsDiv'
+import { Groups} from '../lib/groups'
+import UpcomingLottery from '../components/UpcomingLottery'
+import LatestWinners from '../components/LatestWinners'
+
 
 export default function Home() {
+  
   return (
     <div>
       <Head>
@@ -17,7 +21,9 @@ export default function Home() {
       <main>
         <TabMenu />
         <Banner />
-        <Process props={step}/>
+        <Process groups={Groups}/>
+        <UpcomingLottery />
+        <LatestWinners />
 
         
       </main>
